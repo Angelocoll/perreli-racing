@@ -1,0 +1,474 @@
+* {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  box-sizing: border-box;
+}
+.body {
+  height: 100vh;
+  overflow: hidden;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+.btn-cont {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+.btn-action {
+  height: 5rem;
+  width: 15rem;
+  font-size: 2.5rem;
+  background-color: rgba(255, 255, 255, 0.627);
+  border: none;
+  outline: none;
+  border-radius: 0.3rem;
+  color: rgba(29, 29, 29, 0.855);
+  text-align: center;
+}
+.btn-action:hover {
+  cursor: pointer;
+  scale: 1.1;
+}
+.btn-action:active {
+  scale: 1;
+}
+h1,
+h2 {
+  color: rgba(255, 255, 255, 0.72);
+}
+h1 {
+  font-size: 6rem;
+}
+h2 {
+  font-size: 3rem;
+}
+.logo {
+  height: 6rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 1rem;
+  margin-right: 1rem;
+}
+header {
+  width: 100%;
+  height: 12%;
+  background: rgb(212, 212, 212);
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-direction: row;
+}
+.Logo-box {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  font-size: 2rem;
+}
+.fa-square-facebook {
+  color: rgb(0, 123, 255);
+}
+.fa-square-instagram {
+  margin: 1rem;
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.fa-brands:hover {
+  scale: 1.1;
+  cursor: pointer;
+}
+.fa-brands:active {
+  scale: 1.1;
+}
+.Rub {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.content {
+  width: 100%;
+  height: 45rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.logo-p {
+  margin: 1rem;
+  height: 4rem;
+}
+h3 {
+  font-size: 2rem;
+  color: black;
+  margin: 1rem;
+}
+h4 {
+  color: black;
+  font-size: 1rem;
+  padding-top: 0.4rem;
+}
+.Team-box {
+  width: 90%;
+  height: 70%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.Team-card {
+  height: 65%;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease-out;
+  background: black;
+  background: rgb(212, 212, 212);
+  border-radius: 0.3rem;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+.Team-card:hover {
+  transform: scale(1.02) translateX(10px);
+}
+.Team-a {
+  width: 100%;
+  height: 70%;
+  background: #727272;
+  overflow: hidden;
+  margin: 0;
+}
+.Team-b {
+  width: 100%;
+  height: 15%;
+  background: linear-gradient(rgb(93, 93, 93), rgb(0, 0, 0));
+  background: rgb(212, 212, 212);
+  border-radius: 0.3rem;
+  color: rgb(70, 70, 70);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.Team-Img {
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  display: block;
+  opacity: 1.5;
+}
+.Intro-box {
+  width: 100%;
+  height: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+.Intro {
+  box-shadow: 10px 10px 10px rgba(111, 111, 111, 0.4);
+  width: 75%;
+  background-color: #5e5e5e0f;
+  height: 55%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 0.3rem;
+}
+.Script-Text {
+  color: rgb(70, 70, 70);
+  transition: opacity 0.5s ease-in-out;
+  font-size: 4.5rem;
+}
+.home {
+  width: 100%;
+  height: 42.7rem;
+  background: rgb(154, 154, 154);
+  background: linear-gradient(rgb(93, 93, 93), rgb(0, 0, 0));
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+footer {
+  height: 10rem;
+  width: 100%;
+  background: rgb(212, 212, 212);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.boxing {
+  width: 35%;
+  height: 80%;
+  background: linear-gradient(rgb(93, 93, 93), rgb(0, 0, 0));
+  background: rgb(212, 212, 212);
+  box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.4);
+  outline: 0;
+  border: none;
+  border-radius: 0.3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 3rem;
+  padding-top: 1.5rem;
+  gap: 1rem;
+  color: white;
+  color: black;
+}
+h5 {
+  font-size: 3rem;
+  font-weight: lighter;
+  text-align: center;
+}
+footer div {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 40%;
+  font-size: 1.2rem;
+}
+a {
+  color: black;
+}
+p {
+  font-weight: normal;
+  font-size: 1.3rem;
+}
+.fa-phone {
+  font-size: 1.5rem;
+  margin-right: 1rem;
+  color: rgb(173, 0, 0);
+}
+.fa-location-dot {
+  font-size: 1.5rem;
+  margin-right: 1rem;
+  color: rgb(173, 0, 0);
+}
+.fa-envelope {
+  font-size: 1.5rem;
+  margin-right: 1rem;
+  color: rgb(173, 0, 0);
+}
+footer img {
+  height: 6rem;
+}
+input {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  background-color: white;
+  border: none;
+  outline: none;
+  padding: 0.5rem 1rem;
+
+  color: rgb(0, 0, 0);
+  border-radius: 0.3rem;
+}
+#Send {
+  margin-right: 1rem;
+}
+.btn-mail {
+  background-color: rgb(173, 0, 0);
+  height: 2.5rem;
+  width: 12rem;
+  text-align: center;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.btn-mail:hover {
+  cursor: pointer;
+  background-color: rgb(150, 0, 0);
+  scale: 1.02;
+}
+.btn-mail:active {
+  background-color: rgb(130, 0, 0);
+  scale: 0.98;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 60%;
+}
+.x {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 1rem;
+}
+.Copyright {
+  font-size: 0.7rem;
+  position: fixed;
+  right: 5%;
+  bottom: 5%;
+  color: rgb(255, 98, 98);
+}
+.Designer {
+  font-size: 0.7rem;
+  position: fixed;
+  right: 3%;
+  bottom: 8%;
+  color: rgb(255, 98, 98);
+}
+@media (max-width: 1340px) {
+  .Script-Text {
+    font-size: 4rem;
+  }
+}
+@media (max-width: 1165px) {
+  .Intro {
+    width: 90%;
+  }
+  .Team-card {
+    width: 30%;
+  }
+}
+@media (max-width: 1000px) {
+  .Script-Text {
+    font-size: 3.5rem;
+  }
+}
+@media (max-width: 890px) {
+  .logo {
+    position: relative;
+    height: 4rem;
+    margin: 0;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  .Team-card {
+    height: 60%;
+  }
+  .Script-Text {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 750px) {
+  .Team-card {
+    height: 50%;
+  }
+  .Script-Text {
+    font-size: 2.5rem;
+  }
+  .Intro {
+    height: 50%;
+  }
+}
+@media (max-width: 700px) {
+  h3 {
+    display: none;
+  }
+  h4 {
+    display: none;
+  }
+}
+@media (max-width: 670px) {
+  h1 {
+    font-size: 5rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  .Intro-box {
+    align-items: center;
+    height: 20%;
+  }
+  .Team-box {
+    flex-direction: column;
+    height: 75%;
+  }
+  .Script-Text {
+    font-size: 2rem;
+  }
+  .Intro {
+    height: 70%;
+  }
+  .Team-card {
+    width: 35%;
+  }
+  .content {
+    height: 60rem;
+  }
+  .Team-card {
+    height: 45%;
+    width: 45%;
+  }
+}
+@media (max-width: 550px) {
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  .Team-card {
+    width: 45%;
+  }
+  .Script-Text {
+    font-size: 1.75rem;
+  }
+  .Team-card {
+    width: 55%;
+  }
+}
+@media (max-width: 450px) {
+  h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  .Team-card {
+    width: 55%;
+  }
+  .Script-Text {
+    font-size: 1.5rem;
+  }
+  .Intro {
+    height: 60%;
+  }
+  .Team-card {
+    width: 65%;
+  }
+}
+@media (max-width: 365px) {
+  .Script-Text {
+    font-size: 1.2rem;
+  }
+  .Team-card {
+    width: 75%;
+  }
+}
